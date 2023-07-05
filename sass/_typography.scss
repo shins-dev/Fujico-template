@@ -1,0 +1,44 @@
+.text {
+  font-size: 16px;
+  color: $text-sencondary;
+  font-weight: 700;
+  &-nav {
+    color: $while-color;
+    font-size: 18px;
+    line-height: normal;
+  }
+  &-heading {
+    color: $text-primary;
+    font-size: 42px;
+    line-height: normal;
+  }
+  &-title {
+    font-size: 22px;
+    line-height: normal;
+    color: $text-primary;
+  }
+  &-title-while {
+    font-size: 22px;
+    line-height: normal;
+    color: $while-color;
+  }
+  &-desc{
+    font-size: 16px;
+    font-weight: 500;
+    line-height: normal;
+  }
+  &-decs{
+    font-size: 16px;
+    font-weight: 400;
+    line-height: normal;
+  }
+  &-smail{
+    font-size: 14px;
+    line-height: normal;
+  }
+  &-hero-title{
+    font-size: 40px;
+    line-height: normal;    
+    color: $while-color;
+  }
+}

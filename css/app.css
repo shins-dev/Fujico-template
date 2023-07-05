@@ -1,0 +1,202 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font: inherit;
+}
+
+img,
+picture,
+svg,
+video {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+input,
+select,
+textarea {
+  background-color: transparent;
+  outline: none;
+}
+
+button {
+  cursor: pointer;
+  background-color: transparent;
+  outline: none;
+  border: 0;
+}
+
+@font-face {
+  font-family: "Yu Gothic", serif;
+  src: url(../libs/fonts/yugothib.ttf);
+}
+body {
+  font-family: "Yu Gothic", serif;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+
+.wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.button {
+  padding: 8px 82px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text {
+  font-size: 16px;
+  color: #444444;
+  font-weight: 700;
+}
+.text-nav {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: normal;
+}
+.text-heading {
+  color: #333333;
+  font-size: 42px;
+  line-height: normal;
+}
+.text-title {
+  font-size: 22px;
+  line-height: normal;
+  color: #333333;
+}
+.text-title-while {
+  font-size: 22px;
+  line-height: normal;
+  color: #ffffff;
+}
+.text-desc {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+.text-decs {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+}
+.text-smail {
+  font-size: 14px;
+  line-height: normal;
+}
+.text-hero-title {
+  font-size: 40px;
+  line-height: normal;
+  color: #ffffff;
+}
+
+.header {
+  margin-top: 20px;
+}
+
+.header-top {
+  display: flex;
+  align-items: center;
+}
+.header-logo {
+  margin-right: 194px;
+}
+.header-title {
+  margin-right: 136px;
+}
+.header-title a {
+  font-family: "Noto Serif JP", serif;
+  font-size: 22px;
+  font-weight: 900;
+  color: #333333;
+  line-height: normal;
+}
+.header-title span {
+  color: #D31818;
+}
+
+.logo {
+  max-width: 161px;
+  max-height: 60px;
+  object-fit: cover;
+}
+
+.fujicco {
+  max-width: 200px;
+  max-height: 34px;
+}
+
+.navigation {
+  background-color: #333333;
+  margin-top: 20px;
+}
+
+.navigation-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.menu {
+  width: 733px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.menu-item {
+  list-style-type: none;
+}
+
+@media (hover: hover) {
+  .menu-link:hover {
+    color: #fe0000;
+  }
+}
+.hero {
+  background: url(../images/background.png) lightgray 50%/cover no-repeat;
+  height: 700px;
+}
+
+.hero-main {
+  padding-top: 487px;
+}
+.hero-heading {
+  background: rgba(254, 0, 0, 0.6);
+  padding: 5px 0;
+  margin-bottom: 20px;
+}
+.hero-desc {
+  background: rgba(0, 0, 0, 0.8);
+  margin-bottom: 87px;
+}
+.form {
+  max-width: 400px;
+  max-width: 640px;
+  border-radius: 3px;
+  background: plum;
+}
+
+/*# sourceMappingURL=app.css.map */

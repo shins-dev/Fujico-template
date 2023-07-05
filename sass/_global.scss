@@ -1,0 +1,23 @@
+body {
+  font-family: $font-primary;
+  min-height: 100vh;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+}
+.wraper {
+  width: 100%;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+.button{
+  padding: 8px 82px;
+  color: $while-color;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}

@@ -1,0 +1,68 @@
+.header {
+  margin-top: 20px;
+}
+.header {
+  &-top {
+    display: flex;
+    align-items: center;
+  }
+  &-logo {
+    margin-right: 194px;
+  }
+  &-title {
+    a {
+      font-family: $font-secondary;
+      font-size: 22px;
+      font-weight: 900;
+      color: $text-primary;
+      line-height: normal;
+    }
+    span {
+      color: $red-color;
+    }
+    margin-right: 136px;
+  }
+}
+.logo {
+  max-width: 161px;
+  max-height: 60px;
+  object-fit: cover;
+}
+.fujicco {
+  max-width: 200px;
+  max-height: 34px;
+}
+
+.navigation {
+  background-color: $text-primary;
+  margin-top: 20px;
+}
+
+.navigation {
+  &-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
+  }
+}
+.menu {
+  width: 733px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  &-item {
+    list-style-type: none;
+  }
+  // li:first-child {
+  //   color: red;
+  //   background-color: white;
+  // }
+}
+@media (hover: hover) {
+  .menu-link {
+    &:hover {
+      color: $red-smail;
+    }
+  }
+}

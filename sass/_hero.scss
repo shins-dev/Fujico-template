@@ -1,0 +1,28 @@
+.hero {
+  background: url(../images/background.png) lightgray 50% / cover no-repeat;
+  height: 700px;
+}
+.container {
+}
+.hero {
+  &-main {
+    padding-top: 487px;
+  }
+  &-heading {
+    background: rgba(254, 0, 0, 0.6);
+    padding: 5px 0;
+    margin-bottom: 20px;
+  }
+  &-desc {
+    background: rgba(0, 0, 0, 0.8);
+    margin-bottom: 87px;
+  }
+  &-form {
+  }
+}
+.form {
+  max-width: 400px;
+  max-width: 640px;
+  border-radius: 3px;
+  background: plum;
+}
