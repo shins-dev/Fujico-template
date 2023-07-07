@@ -199,4 +199,78 @@ body {
   background: plum;
 }
 
+.service {
+  margin-top: 140px;
+}
+
+.service-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.service-heading::after {
+  top: -50%;
+  position: absolute;
+  z-index: -1;
+  content: "service";
+  color: #f5f5f5;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  transform: translateY(45%);
+}
+.service-content {
+  margin-top: 50px;
+}
+.service-list {
+  display: flex;
+  align-items: center;
+  gap: 0 230px;
+}
+.service-item {
+  position: relative;
+}
+.service-item::after {
+  position: absolute;
+  content: "";
+  top: 100%;
+  left: 30px;
+  right: 0;
+  width: 3px;
+  height: 95px;
+  background-color: #333333;
+  transform: translateY(-40%);
+}
+.service-icon {
+  max-width: 370px;
+  max-height: 300px;
+  padding: 41px 75px;
+  border-radius: 3px;
+  background: #f8f8f8;
+  margin-bottom: 28px;
+}
+.service-icon img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.service-title {
+  max-width: 440px;
+  position: absolute;
+  right: -120px;
+  bottom: 0;
+  top: -50px;
+  transform: translateY(100%);
+}
+.service-title h3 {
+  margin-bottom: 13px;
+}
+
+.test {
+  margin-top: 260px;
+}
+
 /*# sourceMappingURL=app.css.map */
