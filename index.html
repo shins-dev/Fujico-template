@@ -16,6 +16,7 @@
     <!-- link css -->
     <link rel="stylesheet" href="./libs/fontawesome/css/all.min.css" />
     <link rel="stylesheet" href="./css/app.css" />
+    <link rel="stylesheet" href="./libs/icofont/icofont.min.css" />
   </head>
   <body>
     <!-- sass ./sass/app.scss ./css/app.css --watch -->
@@ -65,32 +66,58 @@
       </header>
       <main>
         <section class="hero">
-          <div class="hero-main">
-            <div class="hero-title">
-              <div class="hero-heading">
-                <div class="container">
+          <div class="container">
+            <div class="hero-main">
+              <div class="hero-title">
+                <div class="hero-heading">
                   <h1 class="text text-hero-title">
                     年収800万円以上ハイクラスエージェント
                   </h1>
                 </div>
-              </div>
-              <div class="hero-desc">
-                <div class="container">
+                <div class="hero-desc">
                   <h2 class="text text-title-while">
                     是非ご相談をお待ちしております。
                   </h2>
                 </div>
               </div>
-            </div>
-            <!-- <div class="hero-form">
-              <div class="container">
-                <form action="#" method="post" class="form">
-                  <div class="form-title">
-                    <h2 class="text">求職者向け登録フォーム</h2>
-                  </div>
-                </form>
+              <div class="hero-form">
+                <div class="container">
+                  <form action="#" method="post" class="form">
+                    <div class="form-title">
+                      <h2 class="text">求職者向け登録フォーム</h2>
+                    </div>
+                    <div class="form-list">
+                      <div class="field">
+                        <label for="#">氏名（必須）</label>
+                        <input type="text" placeholder="" class="field-input" />
+                      </div>
+                      <div class="field">
+                        <label for="#">フリガナ（必須）</label>
+                        <input type="text" placeholder="" class="field-input" />
+                      </div>
+                      <div class="field">
+                        <label for="#">メールアドレス（必須）</label>
+                        <input type="text" placeholder="" class="field-input" />
+                      </div>
+                      <div class="field">
+                        <label for="#">生年月日（必須）</label>
+                        <input type="text" placeholder="" class="field-input" />
+                      </div>
+                      <div class="field">
+                        <label for="#">在籍企業（必須）</label>
+                        <input type="text" placeholder="" class="field-input" />
+                      </div>
+                    </div>
+                    <div class="form-button">
+                      <button class="button">登録</button>
+                    </div>
+                    <div class="form-button-link">
+                      <a href="#" class="text">企業向け問い合わせフォーム</a>
+                    </div>
+                  </form>
+                </div>
               </div>
-            </div> -->
+            </div>
           </div>
         </section>
         <section class="service">
@@ -103,10 +130,14 @@
                 <div class="service-list">
                   <div class="service-item">
                     <div class="service-icon">
-                       <a href="#"><img src="./images/Frame-icon1.svg" alt="" /></a>
+                      <a href="#"
+                        ><img src="./images/Frame-icon1.svg" alt=""
+                      /></a>
                     </div>
                     <div class="service-title">
-                      <h3 class="text text-title">転職支援サービス／人材紹介サービス</h3>
+                      <h3 class="text text-title">
+                        転職支援サービス／人材紹介サービス
+                      </h3>
                       <p class="text text-decs">
                         富士誇はハイクラスのエンジニアに特化した転職サービスをご提供しております。コンサルタントへのご転職は是非ご相談ください。
                       </p>
@@ -114,7 +145,9 @@
                   </div>
                   <div class="service-item">
                     <div class="service-icon">
-                       <a href="#"><img src="./images/Frame-icon2.svg" alt="" /></a>
+                      <a href="#"
+                        ><img src="./images/Frame-icon2.svg" alt=""
+                      /></a>
                     </div>
                     <div class="service-title">
                       <h3 class="text text-title">求人情報サイトの運営</h3>
@@ -128,12 +161,244 @@
             </div>
           </div>
         </section>
-        <section class="test">
+        <section class="feature">
           <div class="container">
-            <div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis at incidunt illum voluptatibus, minus quod delectus est unde, quam repellat quo natus? Sint earum vitae repellat id, obcaecati enim amet?</div>
+            <div class="feature-main">
+              <div class="feature-heading">
+                <a href="#"><h2 class="text text-heading">特徴</h2></a>
+              </div>
+              <div class="feature-content">
+                <div class="feature-list">
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="icofont-bulb-alt text"></i>
+                    </div>
+                    <div class="feature-title">
+                      <h3 class="text feature-text">
+                        今後のキャリアを一緒に考えられる
+                      </h3>
+                    </div>
+                    <div class="feature-desc">
+                      <p class="text">
+                        現在や未来の社会動向を踏まえて、今後あなたがどのようなスキルやポジションを目指すべきなのか、専門的な知見からお答え致します。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="icofont-handshake-deal"></i>
+                    </div>
+                    <div class="feature-title">
+                      <h3 class="text feature-text">年収交渉に強い。</h3>
+                    </div>
+                    <div class="feature-desc">
+                      <p class="text">
+                        経歴書の添削や面接アドバイスは勿論のこと、当社では求人企業との交渉に強みがあります。ハイクラス専門エージェントだからこそ、あなたの強みや将来性を正確に把握し、求人企業へあなたの可能性を最大限アピール致します。
+                      </p>
+                    </div>
+                  </div>
+                  <div class="feature-item">
+                    <div class="feature-icon">
+                      <i class="icofont-live-support"></i>
+                    </div>
+                    <div class="feature-title">
+                      <h3 class="text feature-text">
+                        キャリアカウンセリングは、平日夜間、休日も対応致します。
+                      </h3>
+                    </div>
+                    <div class="feature-desc">
+                      <p class="text">
+                        夜間や休日のキャリアカウンセリングを実施しています。求人紹介から今後のキャリアパスまで、不安な転職活動をじっくりとサポート致します。
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="feature-botton">
+                <div class="feature-link">
+                  <a href="#" class="text">求職者向け登録フォーム</a>
+                  <span>/</span>
+                  <a href="#" class="text">企業向け問い合わせフォーム</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="experience">
+          <div class="container">
+            <div class="experience-main">
+              <div class="experience-heading">
+                <a href="#"><h2 class="text text-heading">転職体験記</h2></a>
+              </div>
+              <div class="experience-content">
+                <div class="experience-list">
+                  <div class="experience-item">
+                    <div class="experience-title">
+                      <h3 class="text experience-text">COMMING SOON</h3>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="cta">
+          <div class="container">
+            <div class="cta-main">
+              <a href="#" class="text cta-text">求職者向け登録フォーム</a>
+              <span>OR</span>
+              <a href="#" class="text cta-text">求職者向け登録フォーム</a>
+            </div>
+          </div>
+        </section>
+        <section class="customer">
+          <div class="container">
+            <div class="customer-main">
+              <div class="customer-heading">
+                <a href="#">
+                  <h2 class="text text-heading">取り扱い企業</h2>
+                </a>
+              </div>
+              <div class="customer-content">
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img1.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img2.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img3.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img4.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img5.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img6.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img7.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img8.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img9.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img10.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img11.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img12.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+                <div class="customer-logo">
+                  <a href="#"
+                    ><img
+                      srcset="./images/ct-img13.png 2x"
+                      alt=""
+                      class="customer-image"
+                  /></a>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
       </main>
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-main">
+            <div class="footer-content">
+              <a href="#" class="footer-logo">
+                <img
+                  srcset="./images/footer-logo.png 2x"
+                  alt=""
+                  class="footer-logo-image"
+                />
+              </a>
+              <ul class="footer">
+                <li class="footer-item">
+                  <a href="#" class="text footer-link">© FUJICO CO., LTD</a>
+                </li>
+              </ul>
+              <div class="">
+                <a href="#!" class="footer-logo">
+                  <img
+                    srcset="./images/footer-logo2.png 2x"
+                    alt=""
+                    class="footer-logo-image"
+                  />
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="rhombus"></div>
     </div>
     <script src="./scripts/app.js"></script>
   </body>

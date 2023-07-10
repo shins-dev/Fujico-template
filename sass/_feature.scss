@@ -1,0 +1,125 @@
+.feature {
+  margin-top: 260px;
+  background: #f8f8f8;
+}
+
+.feature {
+  &-main{
+    position: relative;
+    z-index: 99;
+    &::after{
+      content: " ";
+      width: 381px;
+      height: 795px;
+      top: 0;
+      transform: skew(-29.792deg);
+      background: #F2F2F2;
+      flex-shrink: 0;
+      position: absolute;
+      left: 21%;
+      z-index: -1;
+      
+    }
+  }
+  &-heading {
+    padding-top: 106px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 99;
+    &::before {
+      top: 115px;
+      position: absolute;
+      content: "feature";
+      color: #e8e8e8;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      z-index: -1;
+    }
+  }
+  &-content {
+    margin-top: 50px;
+  }
+  &-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 50px;
+  }
+  &-item {
+    background: #fff;
+    padding: 26px 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 19px;
+    text-align: center;
+  }
+  &-icon {
+    i {
+      color: #fe0000;
+      font-family: IcoFont;
+      font-size: 60px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  &-desc {
+    p {
+      color: #444;
+      text-align: center;
+      font-size: 16px;
+      font-weight: 400;
+      line-height: calc(24 / 16);
+      text-transform: uppercase;
+    }
+  }
+  &-botton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 88px;
+    padding-bottom: 126px;
+  }
+  &-link {
+    a {
+      color: #fe0000;
+      font-size: 20px;
+      font-weight: 700;
+      text-decoration-line: underline;
+      text-transform: uppercase;
+    }
+    span {
+      margin: 0 26px;
+      color: #a7a7a7;
+      font-family: Yu Gothic;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+  }
+  
+}
+.feature-text {
+  color: #333;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: calc(30 / 18);
+  text-transform: uppercase;
+}
+@media (hover: hover) {
+  .feature-item {
+    &:hover {
+      background: white;
+      box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    }
+  }
+}

@@ -1,0 +1,28 @@
+.footer {
+  background: #333;
+}
+
+.footer {
+  &-main {
+  }
+  &-content {
+    padding: 15px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-logo {
+  }
+  &-logo-image {
+  }
+  &-item {
+    list-style-type: none;
+  }
+  &-link {
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+}
