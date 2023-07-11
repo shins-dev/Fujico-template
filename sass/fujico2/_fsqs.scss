@@ -1,0 +1,74 @@
+.fsqs {
+  background: url(../images/fsqs-bg.png), lightgray 50% / cover no-repeat;
+}
+.fsqs {
+  &-main {
+    padding-top: 95px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+  &-heading {
+    position: relative;
+    z-index: 99;
+    &::before {
+      top: 6px;
+      left: 50%;
+      position: absolute;
+      content: "fsqs";
+      color: #e8e8e8;
+      font-size: 60px;
+      font-weight: 700;
+      line-height: normal;
+      text-transform: uppercase;
+      z-index: -1;
+      transform: translateX(-50%);
+    }
+  }
+  &-content {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 88px;
+  }
+  &-list {
+    width: 970px;
+  }
+  &-item {
+    border-bottom: 2px solid $black-color;
+    padding-bottom: 35px;
+    padding-top: 40px;
+  }
+  &-question {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &-icon {
+    i {
+      color: #000;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+  }
+  &-hidden {
+    margin-top: 16px;
+    display: none;
+    p {
+      max-width: 950px;
+    }
+    span {
+      color: #fe0000;
+      font-size: 18px;
+      font-weight: 700;
+      line-height: normal;
+    }
+  }
+}
+.is-show {
+  display: block;
+}

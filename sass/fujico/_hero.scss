@@ -2,25 +2,30 @@
   background: url(../images/background.png) lightgray 50% / cover no-repeat;
   height: 700px;
 }
+
 .hero {
   &-main {
     padding-top: 487px;
   }
   &-heading {
-    position: relative;
     background: rgba(254, 0, 0, 0.6);
     padding: 5px 0;
-    margin-bottom: 20px;
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    padding-left: 50%;
+    transform: translateX(-600px);
+  
   }
   &-desc {
     background: rgba(0, 0, 0, 0.8);
     padding: 6px 0;
-    display: inline-block;
+    position: absolute;
+    left: 0;
+    top: 95px;
+    padding-left: 50%;
+    transform: translateX(-600px);
   }
   &-title {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
+    position: relative;
   }
 }

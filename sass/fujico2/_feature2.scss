@@ -1,0 +1,24 @@
+.feature {
+  margin-top: 260px;
+  background: #f8f8f8;
+}
+
+.feature2 {
+  &-main {
+    position: relative;
+    z-index: 99;
+    padding-bottom: 146px;
+    &::after {
+      content: " ";
+      width: 381px;
+      height: 692px;
+      top: 0;
+      transform: skew(-29.792deg);
+      background: #f2f2f2;
+      flex-shrink: 0;
+      position: absolute;
+      left: 21%;
+      z-index: -1;
+    }
+  }
+}

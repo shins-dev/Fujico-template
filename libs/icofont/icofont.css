@@ -88,6 +88,26 @@ url("./fonts/icofont.woff") format("woff");
   content: "\ef77";
 }
 
+.icofont-duotone.icofont-plus-circle:before
+{
+  content: "\13b8b";
+}
+
+.icofont-duotone.icofont-plus-circle:after
+{
+  content: "\13b8a";
+}
+
+.icofont-minus-circle:before
+{
+  content: "\ef98";
+}
+
+.icofont-plus-circle:before
+{
+  content: "\efc0";
+}
+
 [class^="icofont-"].icofont-duotone,
 	[class*=" icofont-"].icofont-duotone
 {

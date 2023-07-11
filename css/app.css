@@ -111,6 +111,11 @@ body {
   line-height: normal;
   color: #ffffff;
 }
+.text-s18b {
+  color: #000000;
+  font-size: 18px;
+  line-height: normal;
+}
 
 .header {
   margin-top: 20px;
@@ -173,6 +178,7 @@ body {
 @media (hover: hover) {
   .menu-link:hover {
     color: #fe0000;
+    transition: all 0.2s linear;
   }
 }
 .hero {
@@ -184,21 +190,29 @@ body {
   padding-top: 487px;
 }
 .hero-heading {
-  position: relative;
   background: rgba(254, 0, 0, 0.6);
   padding: 5px 0;
-  margin-bottom: 20px;
-  display: inline-block;
+  position: absolute;
+  left: 0;
+  padding-left: 50%;
+  transform: translateX(-600px);
 }
 .hero-desc {
   background: rgba(0, 0, 0, 0.8);
   padding: 6px 0;
-  display: inline-block;
+  position: absolute;
+  left: 0;
+  top: 95px;
+  padding-left: 50%;
+  transform: translateX(-600px);
 }
 .hero-title {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
+  position: relative;
+}
+
+.hero2 {
+  background: url(../images/background2.png) lightgray 50%/cover no-repeat;
+  height: 720px;
 }
 
 .hero-main {
@@ -368,7 +382,7 @@ body {
   height: 795px;
   top: 0;
   transform: skew(-29.792deg);
-  background: #F2F2F2;
+  background: #f2f2f2;
   flex-shrink: 0;
   position: absolute;
   left: 21%;
@@ -466,8 +480,32 @@ body {
   .feature-item:hover {
     background: white;
     box-shadow: 5px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    transition: all 0.2s linear;
   }
 }
+.feature {
+  margin-top: 260px;
+  background: #f8f8f8;
+}
+
+.feature2-main {
+  position: relative;
+  z-index: 99;
+  padding-bottom: 146px;
+}
+.feature2-main::after {
+  content: " ";
+  width: 381px;
+  height: 692px;
+  top: 0;
+  transform: skew(-29.792deg);
+  background: #f2f2f2;
+  flex-shrink: 0;
+  position: absolute;
+  left: 21%;
+  z-index: -1;
+}
+
 .experience {
   margin-top: 118px;
 }
@@ -549,6 +587,66 @@ body {
   text-transform: uppercase;
 }
 
+.experience2-content {
+  margin-top: 65px;
+  display: flex;
+  justify-content: space-between;
+  gap: 0 125px;
+  padding-bottom: 97px;
+}
+.experience2-left {
+  max-width: 370px;
+  max-height: 390px;
+}
+.experience2-title {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px 0;
+}
+.experience2-item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  gap: 0 30px;
+  margin-bottom: 40px;
+  position: relative;
+}
+.experience2-img {
+  max-width: 200px;
+  max-height: 200px;
+}
+.experience2-img img {
+  border-radius: 100rem;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.experience2-heading {
+  border-radius: 5px;
+  border: 2px solid #ddd;
+  background: #fff;
+  padding: 23px 30px 23px 30px;
+}
+.experience2-heading h3 {
+  margin-bottom: 11px;
+}
+.experience2-heading p {
+  max-width: 410px;
+  max-height: 78px;
+}
+.experience2-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-right: 20px solid #DDDDDD;
+  border-bottom: 10px solid transparent;
+  top: 50%;
+  left: 26.8%;
+  transform: translateY(-50%);
+}
+
 .customer {
   margin-top: 116px;
 }
@@ -594,6 +692,79 @@ body {
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+
+.fsqs {
+  background: url(../images/fsqs-bg.png), lightgray 50%/cover no-repeat;
+}
+
+.fsqs-main {
+  padding-top: 95px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.fsqs-heading {
+  position: relative;
+  z-index: 99;
+}
+.fsqs-heading::before {
+  top: 6px;
+  left: 50%;
+  position: absolute;
+  content: "fsqs";
+  color: #e8e8e8;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: normal;
+  text-transform: uppercase;
+  z-index: -1;
+  transform: translateX(-50%);
+}
+.fsqs-content {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 88px;
+}
+.fsqs-list {
+  width: 970px;
+}
+.fsqs-item {
+  border-bottom: 2px solid #000000;
+  padding-bottom: 35px;
+  padding-top: 40px;
+}
+.fsqs-question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.fsqs-icon i {
+  color: #000;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.fsqs-hidden {
+  margin-top: 16px;
+  display: none;
+}
+.fsqs-hidden p {
+  max-width: 950px;
+}
+.fsqs-hidden span {
+  color: #fe0000;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.is-show {
+  display: block;
 }
 
 .footer {

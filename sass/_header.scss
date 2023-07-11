@@ -54,15 +54,12 @@
   &-item {
     list-style-type: none;
   }
-  // li:first-child {
-  //   color: red;
-  //   background-color: white;
-  // }
 }
 @media (hover: hover) {
   .menu-link {
     &:hover {
       color: $red-smail;
+      transition: all 0.2s linear;
     }
   }
 }
